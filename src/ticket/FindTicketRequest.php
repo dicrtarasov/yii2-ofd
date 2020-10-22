@@ -3,7 +3,7 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 22.10.20 23:18:10
+ * @version 23.10.20 01:25:02
  */
 
 declare(strict_types = 1);
@@ -20,13 +20,13 @@ use yii\httpclient\Client;
  */
 class FindTicketRequest extends JsonEntity
 {
-    /** @var string номер фискального документа */
+    /** @var string номер фискального документа (i) */
     public $fiscalDocumentNumber;
 
-    /** @var string фискальный признак документа */
+    /** @var string фискальный признак документа (fp) */
     public $fiscalId;
 
-    /** @var string серийный номер фискального накопителя */
+    /** @var string серийный номер фискального накопителя (fn) */
     public $fiscalDriveId;
 
     /** @var OfdTicketClient */
