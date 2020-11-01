@@ -3,9 +3,10 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 22.10.20 23:19:37
+ * @version 01.11.20 08:07:51
  */
 
+declare(strict_types = 1);
 namespace dicr\tests;
 
 use dicr\helper\Url;
@@ -48,6 +49,7 @@ class ReceiptTest extends TestCase
 
         $res = $req->send();
 
+        /** @noinspection ForgottenDebugOutputInspection */
         var_dump($res->attributes);
         exit;
     }

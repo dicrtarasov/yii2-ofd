@@ -21,7 +21,8 @@
     "require": {
         "php": "~7.3",
         "yiisoft/yii2": "~2.0",
-        "dicr/yii2-helper": "~3.7",
+        "dicr/yii2-json": "~1.1",
+        "dicr/yii2-helper": "~4.0",
         "dicr/yii2-http": "~2.1",
         "dicr/yii2-validate": "~2.2"
     },
@@ -36,6 +37,7 @@
         }
     },
     "repositories": [
+        {"type": "gitlab", "url": "https://gitlab.com/dicr/yii2-json.git"},
         {"type": "gitlab", "url": "https://gitlab.com/dicr/yii2-helper.git"},
         {"type": "gitlab", "url": "https://gitlab.com/dicr/yii2-http.git"},
         {"type": "gitlab", "url": "https://gitlab.com/dicr/yii2-validate.git"},

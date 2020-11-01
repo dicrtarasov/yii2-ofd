@@ -3,13 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 23.10.20 01:25:02
+ * @version 01.11.20 08:07:51
  */
 
 declare(strict_types = 1);
 namespace dicr\ofd\ticket;
 
-use dicr\helper\JsonEntity;
+use dicr\json\JsonEntity;
 use dicr\validate\ValidateException;
 use Yii;
 use yii\base\Exception;
@@ -48,7 +48,7 @@ class FindTicketRequest extends JsonEntity
     /**
      * @inheritDoc
      */
-    public function attributeFields() : array
+    public static function attributeFields() : array
     {
         return [];
     }

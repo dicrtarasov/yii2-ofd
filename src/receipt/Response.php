@@ -3,13 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 22.10.20 22:22:53
+ * @version 01.11.20 08:07:51
  */
 
 declare(strict_types = 1);
 namespace dicr\ofd\receipt;
 
-use dicr\helper\JsonEntity;
+use dicr\json\JsonEntity;
 
 /**
  * Ответ на запрос информации о чеке по QR-коду.
@@ -22,7 +22,7 @@ class Response extends JsonEntity
     /**
      * @inheritDoc
      */
-    public function attributeFields() : array
+    public static function attributeFields() : array
     {
         return [];
     }
@@ -30,7 +30,7 @@ class Response extends JsonEntity
     /**
      * @inheritDoc
      */
-    public function attributeEntities() : array
+    public static function attributeEntities() : array
     {
         return [
             'document' => Document::class

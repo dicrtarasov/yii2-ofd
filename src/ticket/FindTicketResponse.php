@@ -3,13 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 22.10.20 22:40:12
+ * @version 01.11.20 08:07:51
  */
 
 declare(strict_types = 1);
 namespace dicr\ofd\ticket;
 
-use dicr\helper\JsonEntity;
+use dicr\json\JsonEntity;
 
 /**
  * Ответ на поиск чека.

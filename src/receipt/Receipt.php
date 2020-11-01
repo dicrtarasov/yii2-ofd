@@ -3,13 +3,13 @@
  * @copyright 2019-2020 Dicr http://dicr.org
  * @author Igor A Tarasov <develop@dicr.org>
  * @license MIT
- * @version 22.10.20 22:19:21
+ * @version 01.11.20 08:07:51
  */
 
 declare(strict_types = 1);
 namespace dicr\ofd\receipt;
 
-use dicr\helper\JsonEntity;
+use dicr\json\JsonEntity;
 
 /**
  * Class Document
@@ -97,7 +97,7 @@ class Receipt extends JsonEntity
     /**
      * @inheritDoc
      */
-    public function attributeFields() : array
+    public static function attributeFields() : array
     {
         return [];
     }
@@ -105,7 +105,7 @@ class Receipt extends JsonEntity
     /**
      * @inheritDoc
      */
-    public function attributeEntities() : array
+    public static function attributeEntities() : array
     {
         return [
             'item' => [Item::class]
